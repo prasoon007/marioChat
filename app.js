@@ -8,8 +8,8 @@ const socket = require('socket.io');
 app.use(express.static('public'));
 
 // server listening code
-let PORT = process.env.port || 4000;
-const server = app.listen(PORT, () => {
+var port = process.env.PORT || 3000;
+const server = app.listen(port, () => {
   console.log('listening to request on port 4000');
 });
 
